@@ -126,3 +126,9 @@ footer img {
     position: relative;
 }
 
+#profile {
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
