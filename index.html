@@ -1,100 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Harry Zhu</title>
-</head>
-<body>
-<header class="gray">
-    <nav class="testclass1">
-        <h1 class="title">Harry Zhu</h1>
-    </nav>
-    <nav class="testclass2">
-        <ul class="nav__links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-        <a class="cta" href="mailto:hzhu378@gatech.edu"><button>Contact</button></a>
-    </nav>
-</header>
 
-<!--Main Body-->
-<div>
-    <div class="content" id="welcome">
-        <h1>Welcome!</h1>
-    </div>
+    <head>
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
 
-    <div>
-        <img src="img/pfp.png" id="profile" alt="">
-    </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 
-    <div class="content">
-        Hello. My name is Harry Zhu and I am an aspiring computer scientist from New York City.
-        I am a 1st Year student pursuing a BS in Computer Science at the Georgia Institute of Technology.
-        I have skills in c++, java, html/css, matlab, and CAD software(Solidworks).
-        I am versed in object-oriented programming and the application of data structures and algorithms.
-        I have an interest in problem-solving by implementing algorithms.
-        This is my website, and here, you will find some of my thoughts on various topics and personal projects.
-        You will also find a hyperlink to my Github containing my personal endeavors, mostly my solutions in competitive programming, along with my linkedin profile.
-    </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
 
-    <div class="content gray">
-        <h2>Computer Science</h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="index.js"></script>
+    </head>
 
-        <div class="inner">
-            Computer science is the study of the theory behind interacting with data.
-            It currently plays a major role in every facet of life and will only grow with time.
-            When people think of computer science, they think of coding with programming languages, but it is much more than that.
+    <body>
+        <nav class="navigation">
+            <ul>
+                <li class="current" id="home">Home</li>
+                <li class="otherlink" id="portfolio" onclick="goTo(this.id)">Portfolio</li>
+            </ul>
+        </nav>
+
+        <div id="banner">
+            <div class="split left">
+                <div id="pfp">
+                    <img src="img/pfp.png">
+                </div>
+
+                <div id="name">
+                    <h1>harry zhu</h1>
+                </div>
+
+                <hr style="width:20%">
+
+                <div id="school&year">
+                    <h3><a href="https://www.gatech.edu/">Georgia Institute Of Technology</a></h3>
+                    <h3>Computer Science 2024</h3>
+                </div>
+
+                <hr style="width:20%">
+
+                <div id="location">
+                    <h3>New York, NY</h3>
+                    <span>&#x25cf;</span>
+                    <h3>Atlanta, GA</h3>
+                </div>
+
+                <hr style="width:20%">
+
+                <div id="icons">
+                    <i class="fa fa-linkedin-square icon" id="linkedin" onclick="goOutTo(this.id)" style="font-size:48px"></i>
+                    <i class="fa fa-github icon" id="github" onclick="goOutTo(this.id)" style="font-size:48px"></i>
+                </div>
+
+            </div>
+
+            <div class="split right">
+                <div class="aboutme">
+                    <h2>About Me</h2>
+                    <ul class="list">
+                        <li>I am a second year Computer Science student
+                        at the Georgia Institute of Technology from New York
+                        City. I have skills with Agile Methodology, computer theory(DP, Union-find, pattern-finding, etc.) and programming (C++, Java,
+                            Python, MATLAB, JavaScript, html/css, SQL)</li>
+                        <li>I have strong interests in computer theory, mathematics, and
+                        software development and plan to purse a career in Software Engineering.</li>
+                    </ul>
+                </div>
+
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <ul class="list">
+                        <li><strong class="bolder">Personal Project</strong> - 8-Queen pieces on a chessboard game made with JavaFX.</li>
+                        <li><strong class="bolder">Personal Project</strong> - Course list of Georgia Tech Computer Science courses application
+                        made with Android Studio.</li>
+                        <li><strong class="bolder">Personal Project</strong> - Competitive Programming Portfolio</li>
+                        <li><strong class="bolder">Personal Project</strong> - Personal Website/Portfolio(this)</li>
+                        <li><strong class="bolder">Georgia Tech CS2340</strong> - Collaborated with team members to design
+                            and test JavaFX Dungeon Crawler game within 6 milestones using the Model-view-controller design
+                            pattern, Test-driven development, and sequence diagrams. Mimicked industry development cycles.</li>
+                    </ul>
+                </div>
+
+                <div class="competitions">
+                    <h2>Competitions</h2>
+                    <ul class="list">
+                        <li><strong class="bolder">Google Kickstart</strong>- Round G(2020): 1868/8100 Rank, Round H(2020): 1359/4700 Rank
+                        (handle: hzhu)</li>
+                    </ul>
+                </div>
+
+                <div class="coursework">
+                    <h2>Relevant Coursework</h2>
+                    <ul class="list">
+                        <li><strong class="bolder">Georgia Tech - CS1331: Acquired skills in Object-Oriented Programming principles in Java
+                        and JavaFX.</strong> </li>
+                        <li><strong class="bolder">Georgia Tech - CS1332: Acquired mastery over major algorithims(sorting & searching,
+                            graph traversal, etc.) and
+                        data structures(hashmaps, queues, sets, etc.).</strong> </li>
+                        <li><strong class="bolder">Georgia Tech - CS2340: Acquired skills in
+                            design methodology and notation, and standard principles and practices in design.</strong> </li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
-        <div>
-            <img src="img/btree.png" id="tree" alt="">
-        </div>
-
-        <div class="inner">
-            I would argue that “coding” has very little to do with computer science.
-            The creation and application of algorithms is the foundation of computer science and involves logical reasoning and creative problem solving.
-            Difficult problems highlight the ways to apply the knowledge available now, as well as how much we still have to learn.
-            There are problems with no known polynomial-time, such as the traveling salesman problem, often called NP-hard.
-            If these problems are solved efficiently, they intrinsically solve all other problems efficiently.
-            Ultimately, computer science stretches the mind with abstract mathematical and logical concepts, and programming applies these concepts into a usable interface.
-        </div>
     </div>
+    </body>
 
-    <div class="content">
-        <h2>Competitive Programming</h2>
-        <div class="inner">
-            Competitive Programming is a mind-sport that utilizes algorithmic computer science.
-            Competitions are mostly held online and are done individually.
-            For me, the most interesting part of competitive programming is solving difficult problems using creative solutions.
-            Time, efficiency, and accuracy are also all crucial factors needed in succeeding in this niche.
-            Some sites which hold weekly or biweekly contests are Codeforces, AtCoder, and Codechef.
-            Companies like Google and Facebook also hold annual contests such as the Google Code Jam and Facebook Hackercup.
-            For college students such as myself, the International Collegiate Programming Contest(ICPC) is held at a regional and national level.
-            I am drawn to the idea of thinking outside the box and pushing myself to gain more knowledge in order to represent my university at the ICPC as well as improve my own problem-solving skills.
-        </div>
-        <div class="inner">
-            <img src="img/codeforcesimg.png" id="cf" alt="">
-        </div>
-    </div>
-
-    <div class="content gray">
-        <h2>Blog</h2>
-        <div class="inner">
-            To visit my blog's homepage, click <a href="/blog">here</a> or the navigation link in the far right corner.
-            I will be discussing my solutions to programming problems I find interesting. My solution's code will be in c++.
-        </div>
-    </div>
-</div>
-
-<!--Footer-->
-<footer id="footer">
-    <!--<footer class="gray" id="footer">-->
-    <div><img src="img/github-icon.png" alt=""><a href="https://github.com/hzhuarry">hzhuarry</a></div>
-    <div><img src="img/linkedin.png" alt=""><a href="https://www.linkedin.com/in/hzhuarry/">Harry Zhu</a></div>
-</footer>
-</body>
 </html>
