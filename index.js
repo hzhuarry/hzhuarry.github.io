@@ -3,7 +3,7 @@ function goTo(name) {
 }
 
 function goOutTo(name) {
-    url = `https://www.${name}.com`
+    url = `https://${name}.com`
     if (name === 'linkedin') {
         url += "/in/"
     }
