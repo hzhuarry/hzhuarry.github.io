@@ -9,5 +9,5 @@ function goOutTo(name) {
     }
     //add handle
     window.open(url + `/hzhuarry`);
-    console.log(name);
+    console.log(url);
 }
