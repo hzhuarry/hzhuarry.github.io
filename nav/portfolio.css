@@ -1,39 +1,19 @@
-/*Universal*/
-body {
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
+p {
+    float: left;
+    padding: 30px 60px;
+    font-family: 'Lato';
+    font-size: 16px;
 }
 
-/*Navigation*/
-.navigation {
-    width: 100%;
+h2 {
+    clear: both;
 }
 
-.navigation ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.row {
+    padding: 0 50px;
 }
 
-.navigation li {
-    font-weight: 100;
-    letter-spacing: 2px;
-    padding: 20px;
-    transition: 0.3s;
-}
-
-.navigation  li.current{
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-}
-
-.navigation li.otherlink:hover {
-    color: black;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    cursor: pointer;
+.left2 {
+    width: 200px;
+    float: left;
 }

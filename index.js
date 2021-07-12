@@ -7,7 +7,5 @@ function goOutTo(name) {
     if (name === 'linkedin') {
         url += "/in/"
     }
-    //add handle
     window.open(url + `/hzhuarry`);
-    console.log(url);
 }
