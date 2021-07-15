@@ -1,12 +1,23 @@
 p {
-    float: left;
     padding: 30px 60px;
     font-family: 'Lato';
     font-size: 16px;
+    text-align: left;
+    line-height: 1.8;
+    height: 65px;
 }
 
 h2 {
     clear: both;
+}
+
+a {
+    color: #007acc;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fffd5f;
 }
 
 .row {
@@ -15,5 +26,8 @@ h2 {
 
 .left2 {
     width: 200px;
+    height: 65px;
     float: left;
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
